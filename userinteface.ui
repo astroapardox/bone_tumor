@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>userinterface</class>
+ <widget class="QWidget" name="userinterface">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>661</width>
+    <height>415</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>661</width>
+    <height>765</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Prediction</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*
+{
+font: 20pt &quot;Ebrima&quot;;
+}
+#Form{
+background:rgb(22, 22, 22)
+}
+QFrame{
+background:rgb(22, 22, 22);
+}
+</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>130</y>
+     <width>621</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+background:rgb(22, 22, 22);
+border-radius:15px;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="browse">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>30</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:rgb(0, 170, 255);
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+background:rgb(24, 194, 255)
+}</string>
+    </property>
+    <property name="text">
+     <string>Parcourir</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="image_line">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>30</y>
+      <width>351</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+border-radius:15px;
+background:rgb(67, 67, 67);
+color:rgb(255, 255, 255);
+}
+QLineEdit:hover{
+border: 2px solid rgb(85, 170, 255)
+}
+
+
+</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>Image a tester</string>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="tester">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>150</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background:rgb(0, 170, 255);
+color:#fff;
+border-radius:15px;
+}
+QPushButton:hover{
+background:rgb(85, 255, 0)
+}</string>
+    </property>
+    <property name="text">
+     <string>Tester !</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>150</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image:url(:/newPrefix/cancer detection/loading.gif)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>661</width>
+     <height>660</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+background:rgb(32, 32, 32);
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>60</y>
+      <width>261</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame{
+background:rgb(22, 22, 22);
+border-radius:15px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>0</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:rgb(189, 189, 189)</string>
+     </property>
+     <property name="text">
+      <string>Prediction</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <zorder>background</zorder>
+  <zorder>frame</zorder>
+ </widget>
+ <resources>
+  <include location="../gif.qrc"/>
+ </resources>
+ <connections/>
+</ui>
