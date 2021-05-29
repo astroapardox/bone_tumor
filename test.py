@@ -10,7 +10,7 @@ BS = 8
 data = []
 new_model = tf.keras.models.load_model('tumor.model')
 
-im = cv.imread('C:/Users/AstroParadox/Desktop/cancer detection/subjects/1.png')
+im = cv.imread('subjects/1.png') #change to the desired image to test
 image = cv.cvtColor(im, cv.COLOR_BGR2RGB)
 image = cv.resize(image, (224, 224))
 data.append(image)
